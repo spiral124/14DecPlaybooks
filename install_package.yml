@@ -1,0 +1,10 @@
+---
+- name: My Test Playbook
+  hosts: all
+  become: true
+  tasks: 
+  - name: Installing a package
+    yum:
+      name: telnet
+      state: latest
+
